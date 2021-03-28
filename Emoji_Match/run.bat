@@ -1,7 +1,7 @@
 @echo off
-call "C:\anaconda3\Scripts\activate.bat" "D:\Project\Miaomiao\Project\Environment"
+call "**Path of anaconda/Scripts/activate.bat**" "**Your Environment Path**"
 d:
-cd D:\XieNing_Porject\Emoji_Match\Emoji_Match
+cd **Emoji_Match work path**
 echo ----Start Main----
-python "D:\XieNing_Porject\Emoji_Match\Emoji_Match\main.py" 1 1 http://192.168.1.138:4747/video
+python **Emoji_Match work path/main.py** **Show Label(1 or 0)** **Show Bounding Box(1 or 0)** **http:// + webcam address**
 pause
