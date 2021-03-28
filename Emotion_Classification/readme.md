@@ -7,22 +7,22 @@ The focus of this project is to classify emotions based on pictures of human fac
 ### Data storage structure
 Save your data according to the following structure:
 
-Data
-└─Emotion_Detection_data_kaggle
-    ├─train
-    │  ├─category_0
-    │  ├─category_1
-    │  ├─category_2
-    │  ├─category_3
-    │  ├─...
-    │  └─category_n
-    └─valid
-        ├─category_0
-        ├─category_1
-        ├─category_2
-        ├─category_3
-        ├─...
-        └─category_n
+    Data
+    └─Emotion_Detection_data_kaggle
+        ├─train
+        │  ├─category_0
+        │  ├─category_1
+        │  ├─category_2
+        │  ├─category_3
+        │  ├─...
+        │  └─category_n
+        └─valid
+            ├─category_0
+            ├─category_1
+            ├─category_2
+            ├─category_3
+            ├─...
+            └─category_n
 ### Data preprocess
 #### For windows:
 Edit the run_Data_preprocess.bat as following structure:
@@ -39,7 +39,7 @@ Edit the run_Data_preprocess.bat as following structure:
     
 Double click to run
 #### For Mac and Linux:
-python "**Work_Path**\Data_preprocess.py"  Data/Emotion_Detection_data_kaggle angry,fearful,happy,neutral,sad,surprised
+    python "**Work_Path**\Data_preprocess.py"  Data/Emotion_Detection_data_kaggle angry,fearful,happy,neutral,sad,surprised
 
 ### Train
 #### For windows:
@@ -54,7 +54,7 @@ Edit the run_train.bat as following structure:
     pause
 Double click to run
 #### For Mac and Linux:
-python "**Work_Path**\train.py"  --data-path Data/Emotion_Detection_data_kaggle --batch-size 128 --print_freq 50
+    python "**Work_Path**\train.py"  --data-path Data/Emotion_Detection_data_kaggle --batch-size 128 --print_freq 50
 
 ## Dataset
 FER-2013 from Kaggle.
