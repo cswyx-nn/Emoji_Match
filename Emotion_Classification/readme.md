@@ -2,6 +2,8 @@
 
 ## Introduction
 
+The focus of this project is to classify emotions based on pictures of human faces.
+
 ## Dataset
 FER-2013 from Kaggle.
 
