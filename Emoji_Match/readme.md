@@ -6,6 +6,7 @@ This project uses a trained face detection and a trained emotion classification 
 The model and pre-trained weight files are already included in the file. Only need to follow the usage introduction as follows to realize the recognition of character expressions.
 
 ## Usage
+### For Windows:
 Edit Run.bat as follow:
 
     @echo off
@@ -21,3 +22,10 @@ Edit Run.bat as follow:
    3. Image source can be a video, Camera number or webcam address
 
 Double-click run.bat to start execution.
+
+### For MAC and Linux:
+1. Open the mac terminal and enter the command: cd **Your Working Path** to enter the Emoji_Match path.
+2. Grant execution permission to main.py: chmod a+x your work path/main.py
+3. Input command: python main.py  *Show_Label(1or0)*  *Show_BoundingBox(1or0)*  *Image_source*
+
+
