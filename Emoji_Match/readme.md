@@ -24,8 +24,14 @@ Edit Run.bat as follow:
 Double-click run.bat to start execution.
 
 ### For MAC and Linux:
-1. Open the mac terminal and enter the command: cd **Your Working Path** to enter the Emoji_Match path.
-2. Grant execution permission to main.py: chmod a+x your work path/main.py
-3. Input command: python main.py  *Show_Label(1or0)*  *Show_BoundingBox(1or0)*  *Image_source*
+1.Open the mac terminal and enter the Emoji_Match path: 
+    
+    cd **Your Working Path** 
+2.Grant execution permission to main.py: 
+    
+    chmod a+x Your_Work_Path/main.py
+3.Input command: 
+
+    python main.py  *Show_Label(1or0)*  *Show_BoundingBox(1or0)*  *Image_source*
 
 
