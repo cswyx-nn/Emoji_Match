@@ -31,6 +31,6 @@ The YOLO_V5 series model parameters are as follows:
     YOLOv5x	  640    6.0ms      167      87.7M	
 
 YOLO_V5s has only 7.3M parameters, which allows the model to have a very fast response on devices with average performance or even mobile devices.
-Based on these characteristic, I choose YOLO_V5 as the face detection model.
+Based on these characteristic, I choose YOLO_V5s as the face detection model.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4418161.svg)](https://doi.org/10.5281/zenodo.4418161)
