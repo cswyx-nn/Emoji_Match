@@ -3,7 +3,9 @@
 ## Introduction
 This is a sub-project of the Emoji_Match.
 
+## Usege
 
+For usage, please see YOLO_V5 original github: https://github.com/ultralytics/yolov5
 ## Dataset
 Use Wider2Yolo.py to transfer the label of Wider Face into Yolo structure.
 Wider Face dataset is a face detection benchmark dataset, of which images are selected from the publicly available WIDER dataset. 
