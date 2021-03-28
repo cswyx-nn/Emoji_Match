@@ -1,5 +1,10 @@
 # Emoji_MATCH (EM)
 
+## Introduction
+This project uses a trained face detection and a trained emotion classification model to recognize the facial expressions of people in videos and pictures.
+
+The model and pre-trained weight files are already included in the file. Only need to follow the usage introduction as follows to realize the recognition of character expressions.
+
 ## Usage
 Edit Run.bat as follow:
 
@@ -10,7 +15,9 @@ Edit Run.bat as follow:
     echo ----Start Main----
     python **Emoji_Match work path/main.py** **Show Label(1 or 0)** **Show Bounding Box(1 or 0)** **Image source**
     pause
-    
-1. Your Environment Path is folder of the python environment.
-2. Both "Show Label" and "Show Bounding Box" use 1 and 0 to control the result display of the video (1 = True, 0 = False).   
-3. Image source can be a video, Camera number or webcam address
+
+   1. Your Environment Path is folder of the python environment.
+   2. Both "Show Label" and "Show Bounding Box" use 1 and 0 to control the result display of the video (1 = True, 0 = False).   
+   3. Image source can be a video, Camera number or webcam address
+
+Double-click run.bat to start execution.
