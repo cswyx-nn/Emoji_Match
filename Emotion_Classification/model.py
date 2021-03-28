@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from torchsummary import torchsummary
+import netron
 
 
 class EmotionModel(nn.Module):
@@ -44,6 +45,13 @@ class EmotionModel(nn.Module):
 if __name__ == '__main__':
     model = EmotionModel()
     model.to(torch.device('cuda'))
+    d = torch.rand(1, 1, 48, 48)
+    d = d.to(torch.device('cuda'))
+    o = model(d)
+    onnx_path = "onnx_model_name.onnx"
+    torch.onnx.export(model, d, onnx_path)
+
+    netron.start(onnx_path)
     torchsummary.summary(model, (1, 48, 48))
 
 
