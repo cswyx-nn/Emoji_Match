@@ -13,8 +13,9 @@ def train(train_data_loader, model, criterion, optimizer, epoch, gpu, print_freq
     end = time.time()
     for i, (images, labels) in enumerate(train_data_loader):
         data_time.update(time.time()-end)
-        images = images.cuda('cuda', non_blocking=True)
-        labels = labels.cuda('cuda', non_blocking=True)
+        if torch.cuda.is_available():
+            images = images.cuda('cuda', non_blocking=True)
+            labels = labels.cuda('cuda', non_blocking=True)
         output = model(images)
         loss = criterion(output, labels)
         # measure accuracy and record loss
@@ -46,9 +47,9 @@ def validate(val_loader, model, criterion, gpu, print_freq):
     with torch.no_grad():
         end = time.time()
         for i, (images, target) in enumerate(val_loader):
-
-            images = images.cuda(gpu, non_blocking=True)
-            target = target.cuda(gpu, non_blocking=True)
+            if torch.cuda.is_available():
+                images = images.cuda(gpu, non_blocking=True)
+                target = target.cuda(gpu, non_blocking=True)
 
             # compute output
             output = model(images)
