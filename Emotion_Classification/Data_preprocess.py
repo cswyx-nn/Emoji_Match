@@ -6,12 +6,7 @@ train_path = 'Data/MMAFEDB/train'
 valid_path = 'Data/MMAFEDB/valid'
 
 train_list = os.listdir(train_path)
-# label_dic = {'angry': '0',
-#              'fearful': '1',
-#              'happy': '2',
-#              'neutral': '3',
-#              'sad': '4',
-#              'surprised': '5'}
+
 label_dic = {'angry': '0',
              'fear': '1',
              'happy': '2',
