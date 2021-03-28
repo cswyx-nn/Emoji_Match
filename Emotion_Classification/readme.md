@@ -81,6 +81,10 @@ This model refers to the expression classification model of Deop Face. I used Py
 In the FER-2013 data set, the amount of Disgust label images is too small, so during the model training process, I discarded the label and set the classification to 6 categories.
 
 ### Structure
+Visualization：
+![image](https://github.com/cswyx-nn/Emoji_Match/blob/main/Emotion_Classification/image/Model_Structure.png)
+
+Structure：
 
     ----------------------------------------------------------------
             Layer (type)               Output Shape         Param #
