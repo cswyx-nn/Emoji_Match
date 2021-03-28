@@ -1,6 +1,8 @@
 # Emoji_Match
 Face detection and emotion classification project for ESSEC Machine Learning Lesson
 
+Demo Video: https://www.youtube.com/watch?v=cPlBQKXBh9o
+
 ## Introduction
 
 This project include two model training sub-project and one model application sub-project. All three sub-projects are independent and you can use any of them alone. 
