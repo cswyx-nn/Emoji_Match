@@ -3,7 +3,7 @@ import os
 from PIL import Image
 import numpy as np
 
-
+# Load Emoji image file
 emoji_path = [os.path.join('emoji', i) for i in os.listdir('emoji')]
 emoji_dic = {'angry': None,
              'fearful': None,
@@ -18,6 +18,7 @@ for emoji in emoji_path:
     emoji_dic[label] = emoji_image
 
 
+# Add emoji image to original image
 def add_emoji(image, label, bbox):
     x1, y1, x2, y2 = bbox
     image_original = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))

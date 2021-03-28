@@ -4,11 +4,13 @@ import cv2
 import os
 import numpy as np
 
+
+# Load Emotion classification model to GPU
 model_path = 'classification_checkpoint/model_best.pth.tar'
 model = torch.load(model_path)
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 model.to(device)
-
+# Define Label
 label_dic = {'0': 'angry',
              '1': 'fearful',
              '2': 'happy',
@@ -17,6 +19,7 @@ label_dic = {'0': 'angry',
              '5': 'surprised'}
 
 
+# Normalize three-channel or single-channel image
 def image_normalization(image, size):
     if len(image.shape) == 3:
         h, w, ch = image.shape
@@ -29,7 +32,6 @@ def image_normalization(image, size):
         img_b = image[:, :, 2]
         mean_r, mean_g, mean_b = (np.mean(img_r), np.mean(img_g), np.mean(img_b))
         std_r, std_g, std_b = (np.std(img_r), np.std(img_g), np.std(img_b))
-
         image_out = np.zeros(image.shape, dtype='float32')
         image_out[:, :, 0] = np.array((img_r - mean_r) / std_r, dtype='float32')
         image_out[:, :, 1] = np.array((img_g - mean_g) / std_g, dtype='float32')
@@ -47,6 +49,7 @@ def image_normalization(image, size):
         return image_out
 
 
+# Get Emotion Classification result
 def emotion_classification(img_test, image_size=48, channel=1):
     test_images = np.zeros((1, channel, image_size, image_size), dtype='float')
     img = image_normalization(img_test, image_size)
