@@ -26,10 +26,10 @@ Double-click run.bat to start execution.
 ### For MAC and Linux:
 1.Open the mac terminal and enter the Emoji_Match path: 
     
-    cd **Your Working Path** 
+    cd **Your_Working_Path** 
 2.Grant execution permission to main.py: 
     
-    chmod a+x Your_Work_Path/main.py
+    chmod a+x Your_Working_Path/main.py
 3.Input command: 
 
     python main.py  *Show_Label(1or0)*  *Show_BoundingBox(1or0)*  *Image_source*
