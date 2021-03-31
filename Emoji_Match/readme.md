@@ -10,10 +10,15 @@ Then this model will add emoji with the same label to the input photo.
 The emoji used are as below:
 
 😡  for angry
+
 😱  for fearful
+
 😁  for happy
+
 😐  for neutral
+
 😭  for sad
+
 😮  for surprised
 
 
