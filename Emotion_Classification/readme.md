@@ -3,6 +3,8 @@
 ## Introduction
 
 The focus of this project is to classify emotions based on pictures of human faces.
+This model can classify human face emotion into 6 categories: happy, sad, neutral, surprised, fearful and angry.
+
 ## Usage
 ### Data storage structure
 Save your data according to the following structure:
