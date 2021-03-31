@@ -15,11 +15,11 @@ The emoji used are as below:
 
 😁  for happy
 
-😐  for neutral
-
 😭  for sad
 
 😮  for surprised
+
+😐  for neutral
 
 
 ## Usage
