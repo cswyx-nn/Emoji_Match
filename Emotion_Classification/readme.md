@@ -6,6 +6,13 @@ The focus of this project is to classify emotions based on pictures of human fac
 
 This model can classify human face emotion into 6 categories: happy, sad, neutral, surprised, fearful and angry.
 
+## Dataset
+
+The data used to train this model is FER-2013 facial expression dataset from Kaggle.
+
+Here is link to this dataset: https://www.kaggle.com/msambare/fer2013
+
+
 ## Usage
 ### Data storage structure
 Save your data according to the following structure:
