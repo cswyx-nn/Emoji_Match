@@ -10,7 +10,11 @@ This model can classify human face emotion into 6 categories:
 
 ## Dataset
 
-The data used to train this model is FER-2013 facial expression dataset from Kaggle.
+The data used to train this model is FER-2013 facial expression dataset from Kaggle. The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image.
+
+The task is to categorize each face based on the emotion shown in the facial expression into one of six categories.
+
+The training set consists of 28,709 examples and the public test set consists of 3,589 examples.
 
 Here is link to this dataset: https://www.kaggle.com/msambare/fer2013
 
