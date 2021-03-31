@@ -3,9 +3,23 @@
 ## Introduction
 This project uses a trained face detection and a trained emotion classification model to recognize the facial expressions of people in videos and pictures.
 
-The model and pre-trained weight files are already included in the file. Only need to follow the usage introduction as follows to realize the recognition of character expressions.
+This model will complete face detection first, then it will classify human facial expression into 6 categories: happy, sad, neutral, fearful, surprised and angry.
+
+Then this model will add emoji with the same label to the input photo.
+
+The emoji used are as below:
+
+😡  for angry
+😱  for fearful
+😁  for happy
+😐  for neutral
+😭  for sad
+😮  for surprised
+
 
 ## Usage
+The model and pre-trained weight files are already included in the file. Only need to follow the usage introduction as follows to realize the recognition of character expressions.
+
 ### For Windows:
 Edit Run.bat as follow:
 
