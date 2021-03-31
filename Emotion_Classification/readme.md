@@ -4,7 +4,9 @@
 
 The focus of this project is to classify emotions based on pictures of human faces.
 
-This model can classify human face emotion into 6 categories: happy, sad, neutral, surprised, fearful and angry.
+This model can classify human face emotion into 6 categories: 
+
+0=Angry, 1=Fear, 2=Happy, 3=Sad, 4=Surprise, 5=Neutral.
 
 ## Dataset
 
